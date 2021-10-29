@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<?php
+function myFunction($num) {
+  throw new Exception("An error occurred");
+}
+
+try {
+  myFunction(5);
+} catch (Exception $e) {
+  print_r($e->getTraceAsString());
+}
+?>
+
+</body>
+</html>
+
+
+
+
+
+#0 /home/abyQh7/prog.php(10): myFunction(5)
+#1 {main}
